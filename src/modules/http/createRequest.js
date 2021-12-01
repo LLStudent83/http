@@ -18,6 +18,7 @@ export default function createRequest(method, data, action, id, status, callback
   }
 
   xhr.addEventListener('load', () => { callback(xhr); });
+  // eslint-disable-next-line no-console
   xhr.addEventListener('error', (err) => (console.log(err)));
   xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
   xhr.send(method !== 'GET' && params);

@@ -137,7 +137,7 @@ export default class Ticket {
   }
 
   // eslint-disable-next-line class-methods-use-this
-  deleteTicket(event) {
+  deleteTicket() {
     const idTicket = this.deleteTicketEl.getAttribute('id');
     popUp.closepopUp();
     this.deleteTicketEl.remove();

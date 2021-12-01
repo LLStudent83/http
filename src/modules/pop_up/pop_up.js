@@ -1,5 +1,3 @@
-import createRequest from '../http/createRequest';
-
 export default class PopUp {
   constructor(container, ticket) {
     if (typeof container === 'string') {

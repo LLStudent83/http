@@ -2,6 +2,7 @@
 /* eslint-disable no-unused-vars */
 import PopUp from './modules/pop_up/pop_up';
 import HelpDesk from './modules/desk/desk';
+// eslint-disable-next-line import/no-cycle
 import Ticket from './modules/ticket/ticket';
 
 const ticket = new Ticket();
