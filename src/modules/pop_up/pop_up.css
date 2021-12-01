@@ -1,0 +1,68 @@
+.popup {
+  font: inherit;
+  width: 400px;
+  border: 1px solid #726b6b;
+  border-radius: 10px;
+  padding: 15px;
+  box-sizing: border-box;
+  position: absolute;
+  left: 150px;
+  background: rgba(255, 255, 255, 1);
+}
+
+.form {
+  width: 100%;
+}
+
+.form p {
+  margin: 0 0 10px 0;
+}
+
+.form p:nth-of-type(n + 2) {
+  margin-top: 15px;
+}
+
+.form_Name {
+  margin: 0 0 25px 0;
+  text-align: center;
+  font: inherit;
+}
+
+.form_nameInput {
+  display: block;
+  margin-bottom: 7px;
+}
+
+.form_input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  resize: none;
+  overflow: auto;
+}
+
+.form_inputDetail {
+  height: 60px;
+}
+
+.form_footer {
+  text-align: right;
+}
+
+.button {
+  padding: 10px 20px;
+  font: inherit;
+  color: inherit;
+  background-color: white;
+  border-radius: 10px;
+  border-color: #726b6b;
+  cursor: pointer;
+}
+
+.tickets {
+  box-sizing: border-box;
+  width: 100%;
+  position: absolute;
+  top: 50px;
+}
+

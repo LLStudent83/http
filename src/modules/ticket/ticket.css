@@ -1,0 +1,74 @@
+.ticket {
+    border: 1px solid #726b6b;
+    box-sizing: border-box;
+    list-style-type: none;
+    min-height: 40px;
+  }
+    
+  .ticketName {
+    display: inline-block;
+    margin-left: 10px;
+    box-sizing: border-box;
+    width: 400px;
+    font: inherit;
+    cursor: pointer;
+
+    /* border: 1px solid #726b6b; */
+
+  }
+  
+  .ticketDate {
+    box-sizing: border-box;
+    margin-left: 10px;
+    margin-right: 20px;
+    font: inherit;
+  }
+  
+  .ticketButton {
+    border: 1.5px solid #726b6b;
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    background-color: #fff;
+    margin-left: 5px;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+  
+  .ticketButton:active {
+    border: 3px solid #726b6b;
+  }
+
+  .done {
+    background-image: url(../../img/m_images_mark.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  
+  }
+  
+  .ticketChange {
+    background-image: url(../../img/m_images.png);
+  }
+  
+  .ticketDelete {
+    background-image: url(../../img/m_png-clipclose-button.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .ticketShort {
+    margin: 5px 0 5px 0;
+    display: flex;
+    align-items: center;
+  }  
+  
+  .ticketFullName {
+    /* border: 1px solid #726b6b; */
+    box-sizing: border-box;
+    width: 400px;
+    font: inherit;
+    margin: 10px 0 15px 40px;
+  }
+
