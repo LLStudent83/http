@@ -7,6 +7,6 @@ import Ticket from './modules/ticket/ticket';
 
 const ticket = new Ticket();
 const pop_up = new PopUp('container', ticket);
-const helpDesk = new HelpDesk(pop_up);
+const helpDesk = new HelpDesk(pop_up, ticket);
 
 export default pop_up;

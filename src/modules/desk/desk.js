@@ -1,7 +1,8 @@
-// import PopUp from '../pop_up/pop_up';
+import createRequest from '../http/createRequest';
 
 export default class HelpDesk {
-  constructor(popUp) {
+  constructor(popUp, ticket) {
+    this.ticket = ticket;
     this.popUp = popUp;
     this.container = document.getElementsByClassName('container');
     this.init();
@@ -12,6 +13,18 @@ export default class HelpDesk {
     for (const element of buttonsChangeTicket) {
       element.addEventListener('click', (event) => this.onClick(event));
     }
+    this.renderingTickets();
+  }
+
+  renderingTickets() {
+    createRequest('GET', null, 'allTickets', null, null, (xhr) => {
+      const arrTickets = JSON.parse(xhr.response);
+      for (const ticket of arrTickets) {
+        const ticketString = JSON.stringify(ticket);
+        const ticketHTML = this.ticket.createHTMLTicket(ticketString);
+        this.ticket.renderingTicket(ticketHTML, 'new');
+      }
+    });
   }
 
   onClick(event) {

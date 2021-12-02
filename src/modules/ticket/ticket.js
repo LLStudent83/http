@@ -9,7 +9,7 @@ export default class Ticket {
   }
 
   // eslint-disable-next-line class-methods-use-this
-  createHTMLTicket(data) { // добвить класс done
+  createHTMLTicket(data) {
     const dataTicket = JSON.parse(data);
     // eslint-disable-next-line prefer-const
     let { name, id, status } = dataTicket;
